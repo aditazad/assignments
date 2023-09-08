@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
-class MyApp extends StatelessWidget{
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,21 +13,22 @@ class MyApp extends StatelessWidget{
           elevation: 70,
           toolbarHeight: 100,
           backgroundColor: Colors.green,
-          title: Text('Home',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
+          title: Text(
+            'Home',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+          ),
           centerTitle: true,
           leading: IconButton(
-            icon: Icon(Icons.add_business), // Replace 'icon1' with your left-side icon
+            icon: Icon(
+                Icons.add_business), // Replace 'icon1' with your left-side icon
             onPressed: () {
               // Add your action here
             },
           ),
           actions: [
-
             IconButton(
-                icon: Icon(Icons.search),
-              onPressed: (){
-
-              },
+              icon: Icon(Icons.search),
+              onPressed: () {},
             )
           ],
         ),
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget{
               Text(
                 'This is mod 5 Assignment\n',
                 style: TextStyle(
-                  fontSize:20,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -48,16 +50,15 @@ class MyApp extends StatelessWidget{
                     TextSpan(
                       text: 'My',
                       style: TextStyle(
-                        fontSize:20,
+                        fontSize: 20,
                         color: Colors.pink,
-
                       ),
                     ),
                     TextSpan(text: ' '),
                     TextSpan(
                       text: 'phone',
                       style: TextStyle(
-                        fontSize:10,
+                        fontSize: 10,
                         color: Colors.blue,
                       ),
                     ),
@@ -65,7 +66,7 @@ class MyApp extends StatelessWidget{
                     TextSpan(
                       text: 'name',
                       style: TextStyle(
-                        fontSize:15,
+                        fontSize: 15,
                         color: Colors.purple,
                       ),
                     ),
@@ -73,7 +74,7 @@ class MyApp extends StatelessWidget{
                     TextSpan(
                       text: 'Your phone name',
                       style: TextStyle(
-                        fontSize:20,
+                        fontSize: 20,
                         color: Colors.orange,
                       ),
                     ),
@@ -83,8 +84,7 @@ class MyApp extends StatelessWidget{
             ],
           ),
         ),
-        ),
-      );
+      ),
+    );
   }
-  
 }
